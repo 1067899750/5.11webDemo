@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>陈超-Object</title>
+</head>
+<body>
+	<div class="wrap"></div>
+</body>
+	<script>
+		// var str = "百度搜索PT系医院pt";
+
+		// var reg1 = new RegExp('莆田','g');
+		// var reg2 = /pt/gi;
+
+		// var newStr = str.replace(reg2,'**');
+		// console.log(newStr);
+
+		// var str = "ht-ml1 HTm-l2 html.3 Html.4 HTML5 学堂"
+		// var reg = /\w/g;
+		// // var reg = /[\u4e00-\u9fa5\uF900-\uFA2D]/g
+		// var newStr = str.replace(reg,'**');
+		// console.log(newStr);
+
+		// var str = '101000001';
+		// var reg = /0{1,}/g;
+		// console.log(str.replace(reg,'9'));
+
+		// var str = 'HTML5学堂20160506course123';
+		// var reg = /\d+/g;
+		// console.log(str.match(reg));
+
+		// // var str = '2016/';
+		// var str = '05/';
+		// // var reg = /^\d{4}[\-\.\/]$/g
+		// var reg = /^\d{1,2}[\-\.\/]$/g
+		// console.log(reg.test(str));
+
+		// 年
+		// [12]\d{3}([\-\.\/])()()
+		// 月
+		// 0?[1-9]|1[0-2]
+		// 日
+		// 0?[1-9]|[12]\d|3[0-1]
+
+		// 年月日
+		// var str = '2016.02.29';
+		// var reg = /^[12]\d{3}([\-\.\/])(0?[1-9]|1[0-2])\1(0?[1-9]|[12]\d|3[0-1])$/g;
+		// console.log(reg.test(str));
+		// var str ='window7window95window8windowXP'
+		// var reg = /window(?=7)/g;  // 前向
+		// var reg = /window(?!7)/g;  // 反前向
+		// var reg = /(?=window)[7]/g;
+		// console.log(str.replace(reg,'win'));
+
+		var str = '123456789';
+		var reg = /(?=(?!\b)(\d{3})+$)/g;
+		console.log(str.replace(reg,','));
+	</script>
+</html>
